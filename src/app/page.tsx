@@ -46,6 +46,7 @@ const Home: NextPage = () => {
                     value={input}
                     onChange={handleInputChange}
                     placeholder="Add a new task"
+                    className="pl-2 text-black"
                 />
                 <button type="submit" className="ml-2 p-2 bg-blue-500 text-white rounded">
                     Add
