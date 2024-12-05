@@ -54,6 +54,13 @@ const Home: NextPage = () => {
             </form>
 
             <ul>
+                {tasks.length === 0 && (
+                    <>
+                        &nbsp;
+                        No tasks
+                    </>
+                )}
+                
                 {tasks.map((task) => (
                     <li key={task.id} className="flex items-center mb-2">
                         <input 
